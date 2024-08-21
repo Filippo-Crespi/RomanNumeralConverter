@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  color: aliceblue;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background-color: #1e1e1e;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 200px;
+}
+
+main > span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+main > h1 {
+  font-size: 3rem;
+}
+
+input,
+button {
+  padding: 0.3rem 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  cursor: pointer;
+}
