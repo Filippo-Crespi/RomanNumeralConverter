@@ -39,8 +39,8 @@ convertBtn.onclick = () => {
   let number = Number(decimalNumber.value);
 
   for (let entry in converter) {
-    result += entry.repeat(number / converter[entry]);
-    number = number % converter[entry];
+    result += entry.repeat(Math.floor(number / converter[entry]));
+    number %= converter[entry];
     if (number === 0) {
       break;
     }
